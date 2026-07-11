@@ -6,7 +6,7 @@ Self-contained port of the budget-controlled, score-ranked densifier from
  
 It is an *alternative* densifier, selected at runtime via the config key
 ``densify_mode`` ("mcmc" keeps the existing behaviour; "taming" uses this
-package). Where MCMC reaches a target primitive count indirectly by tuning
+package). Where MCMC reaches a target primitive count indirectly by tuning 
 ``mcmc_cap_max`` + refine cadence, taming *sets* the final count directly via
 ``taming_budget`` — which is what shrinks the Optuna search space.
 
